@@ -1,0 +1,11 @@
+<ion-view view-title="Gallery" >
+    <ion-content ng-class="{expanded:isExpanded}" class="animate-fade-slide-in">
+        <div class="list padding">
+            <div class="card card-gallery item item-text-wrap">
+                <div ng-repeat="imagen in Imagenes" class="ink dark-bg">
+                    <img class="full-image" src="{{URL_SERVER + imagen}}" />
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

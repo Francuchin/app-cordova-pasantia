@@ -1,0 +1,18 @@
+<ion-view view-title="{{Titulo}}">
+    <ion-content ng-class="{expanded:isExpanded}">
+        <div class="content">
+            <div ng-repeat="Categoria in Categorias" class="list animate-fade-slide-in-right">
+                <a class="item" style=" background-color: rgba(230,230,230,.9); ">
+                    <h2 style="text-transform: uppercase;">{{Categoria.nombre}}</h2>
+                </a>
+                <a ng-repeat="lugar in Categoria.lista" class="item item-avatar" href="#/app/profile/{{lugar.id}}">
+                    <img src="http://pdu-francuchin.c9users.io{{lugar.imagen}}" />
+                    <h2>{{lugar.nombre}}</h2>
+                    <p> <i class="icon ion-ios-star"></i>
+                            22
+                    </p>
+                </a>  
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,25 @@
+<ion-view view-title="{{Lugar.nombre}}">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+        <div class="hero slide-up" style="background-image: url('{{Portada}}')" >
+            <div class="content">
+                <div ng-show="{{verImagen}}" class="avatar" style="background-image: url('{{Imagen}}')" ></div>
+                <h3><a class="light sombraAzul">{{Lugar.nombre}}</a></h3>
+                <h4>Direccion</h4>
+            </div>
+        </div>
+        <div class="tabs tabs-dark tabs-icon-top static">
+            <a ui-sref="app.activity" class="tab-item">
+                <i class="icon ion-film-marker"></i> Multimedia
+            </a>
+            <a ui-sref="app.friends" class="tab-item">
+                <i class="icon ion-map"></i> Mapa
+            </a>
+            <a href="#/app/gallery/{{Lugar.id}}" class="tab-item">
+                <i class="icon ion-images"></i> Galeria
+            </a>
+        </div>
+        <div class="padding animate-fade-slide-in-right">
+            <div class="articulo" ng-bind-html="Lugar.articulo"></div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,151 @@
+/* General
+==================================*/
+h1 {
+    color: #fff;
+    text-shadow: 0 1px 0px #000;
+    font-size: 42px;
+}
+
+
+/* Utilities
+==================================*/
+.title-bordered {
+    border-top: solid 2px #bbb;
+    padding-top: 30px;
+}
+
+p {
+    color: #555;
+    margin: 0 0 25px;
+}
+
+.scroll {
+    height: 100%;
+}
+
+
+/* Menu
+==================================*/
+.menu .bar.bar-header.expanded {
+    transition: all .5s ease-in-out;
+}
+
+.menu-open .bar.bar-header.expanded {
+    background-color: #222;
+}
+
+.menu h2 {
+    bottom: 0;
+    font-size: 18px;
+    left: 16px;
+    position: absolute;
+}
+
+.menu .avatar {
+    height: 88px;
+    width: 88px;
+}
+
+.menu.menu-left * {
+    font-weight: bold;
+}
+
+.menu-open .ion-navicon {
+    transform: rotate(-360deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-open .ion-navicon:before {
+    content: "\f2ca";
+}
+
+
+/* Login
+==================================*/
+.app-icon {
+    background-color: transparent;
+    background: url('../img/icon.png') center;
+    background-size: cover;
+    height: 125px;
+    margin: 0 auto;
+    width: 125px;
+}
+
+.social-login {
+    position: fixed;
+    bottom: 0;
+}
+
+#btn-camara{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+  /*--- articulo  ---*/
+.sombraAzul{
+    text-shadow:-1px 0px 1px #0945ae,
+                1px 0px 1px #0945ae,
+                0px 1px 1px #0945ae,
+                -0px -1px 1px #0945ae,
+                0px 0px 1px #0945ae,
+                -1px 0px 2px rgb(183, 28, 28),
+                1px 0px 2px rgb(183, 28, 28),
+                0px 1px 2px rgb(183, 28, 28),
+                -0px -1px 2px rgb(183, 28, 28),
+                0px 0px 3px rgb(183, 28, 28);
+}
+.articulo{
+    color:rgba(0,0,0,.9);
+    padding: .5em;
+    white-space: normal;
+    line-height: normal;
+    text-transform: none;
+}
+.articulo > img{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 1px 4px 0 rgba(0,0,0,.12),0 1px 2px -1px rgba(0,0,0,.2);
+    border-radius: 2px;
+    border:2px solid white;
+    float: left;
+    margin: 5px;
+}
+.articulo > .derecha{
+    float: right;
+}
+.articulo > .porcentaje-50{
+    width:50%;
+}
+
+/* ---- -----*/
+@media (orientation: landscape) {  
+    .inicio{
+        width: 40% !important;
+        display:inline-block !important;
+    }
+    .padding.inicio{
+        height: 50% !important;
+        position: fixed;
+        top: 50% !important;
+        transform: translateY(-50%);
+    }
+}
+/*--- ERROR ---*/
+
+mensaje-error{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    max-width: 50%;
+    color: white;
+    padding: 15px !important;
+    background-color: red !important;
+    text-align: center;
+    text-shadow:    -1px -1px 0px black,
+                    1px -1px 0px black,
+                    -1px 1px 0px black,
+                    1px 1px 0px black,
+                    -1px -1px 1px black,
+                    1px -1px 1px black;
+    font: 700 1.1em sans-serif;
+}
